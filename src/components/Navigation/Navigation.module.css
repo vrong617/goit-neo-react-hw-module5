@@ -1,0 +1,31 @@
+header {
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 15px 30px;
+
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+
+      a {
+        display: block;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        line-height: 1;
+        background-color: #3a91ee;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover {
+          color: #fff;
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
