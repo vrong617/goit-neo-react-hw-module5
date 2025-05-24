@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Outlet } from "react-router-dom";
 import { fetchMovieDetails } from "../../api";
 import useFetchData from "../../hooks/useFetchData";
 import Loader from "../../components/Loader/Loader";
@@ -19,6 +19,7 @@ function MovieDetailsPage() {
             {movie && <MovieDetails movie={movie} />}
             {loading && <Loader />}
             {error && <Error message={error.message} />}
+            <Outlet />
         </div>
     )
 }
