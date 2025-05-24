@@ -11,7 +11,7 @@ function MovieDetailsPage() {
         data: movie,
         loading,
         error,
-      } = useFetchData(() => fetchMovieDetails(movieId), [movieId]);
+    } = useFetchData(() => fetchMovieDetails(movieId), [movieId]);
 
 
     return (
