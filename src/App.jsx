@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
 import Navigation from "./components/Navigation/Navigation";
 import "modern-normalize";
@@ -14,7 +14,7 @@ const MovieReviews = lazy(() => import("./components/MovieReviews/MovieReviews.j
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navigation />
       <main>
         <Suspense>
@@ -29,7 +29,7 @@ function App() {
           </Routes>
         </Suspense>
       </main>
-    </BrowserRouter>
+    </>
   );
 }
 

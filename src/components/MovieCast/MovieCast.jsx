@@ -18,8 +18,6 @@ function MovieCast() {
         (res) => res.data.cast,
     );
 
-    console.log(movieId, cast);
-
     return (
         <>
           {loading && <Loader />}
