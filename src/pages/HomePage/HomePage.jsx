@@ -18,7 +18,7 @@ function HomePage() {
   return (
     <div>
       <h1>Top movies</h1>
-      <MovieList movies={Array.isArray(movies) ? movies : []} from="/" />
+      <MovieList movies={Array.isArray(movies) ? movies : []} />
       {loading && <Loader />}
       {error && <Error message={error.message} />}
     </div>

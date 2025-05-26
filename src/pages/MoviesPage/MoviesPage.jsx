@@ -43,7 +43,7 @@ function MoviesPage() {
         />
         <button type="submit" className={styles.searchButton}>Search</button>
       </form>
-      <MovieList movies={Array.isArray(movies) ? movies : []} from="/" />
+      <MovieList movies={Array.isArray(movies) ? movies : []} />
       {loading && <Loader />}
       {error && <Error message={error.message} />}
    </div>

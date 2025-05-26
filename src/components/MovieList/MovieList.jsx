@@ -1,14 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./MovieList.module.css";
 
-function MovieList({ movies, from }) {
+function MovieList({ movies }) {
+  const location = useLocation();
+
   return (
     <div className={styles.grid}>
       {movies.map((movie) => (
         <Link
           to={`/movies/${movie.id}`}
-          state={{ from }}
+          state={{ from: location }}
           key={movie.id}
           className={styles.card}
         >
